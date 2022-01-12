@@ -1,0 +1,13 @@
+{
+  "name": "blogsite",
+  "version": "0.0.1",
+  "description": "A MERN Blog website",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run server\" \" cd client && npm run start\" "
+  },
+  "author": "DSAghicha",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
