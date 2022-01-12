@@ -1,0 +1,48 @@
+@use '../../scss'as *;
+
+.categories-cr {
+    padding: $spacing;
+    flex: 1;
+
+    h2 {
+        margin-bottom: 5px;
+    }
+    .cr {
+        padding: calc($spacing / 4);
+        border-radius: calc($spacing / 2);
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+
+            svg {
+                width: 24px;
+                height: 24px;
+                transition: fill 350ms ease-in, transform 400ms ease-in-out;
+
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 700;
+                margin-left: 10px;
+                transition: color 350ms ease-in, transform 400ms ease-in-out;
+            }
+
+            &:hover {
+                svg {
+                    fill: $olive-green;
+                    transform: scale(1.1);
+                }
+
+                p {
+                    color: $olive-green;
+                    transform: scale(1.1);
+
+                }
+            }
+        }
+    }
+}
